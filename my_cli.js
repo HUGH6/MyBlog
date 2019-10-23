@@ -91,9 +91,19 @@ if (option === 'start' || option === 's') {
     })
     // finish_work()
 // 操作失败，退出
+} else if (option === "help" || option === "h") {
+	console.log("###############################")
+    console.log("参数说明：")
+	console.log("start或s        可以在更改博客内容前运行，用于从远程仓库同步代码到本地，用于在意外更改本地源码无法回退时，恢复代码使用；")
+	console.log("generate或g     相当于执行'hexo clear && hexo g && hexo d'")
+	console.log("update或u       相当于执行'hexo g && hexo d',与g参数的区别在于不clean原有文件，速度快，但可能文件更新不全；")
+	console.log("finish或f       在完成博客更新后执行，将本地所以的源代码改动同步到远程仓库；")
+	console.log("help或h         获取命令行的参数说明")
+    console.log("###############################")
 }
  else {
     console.log("###############################")
     console.log("ERR: 参数错误")
+	console.log("您可以尝试运行'npm run hello help' 或 'npm run hello h'获取命令行参数说明。")
     console.log("###############################")
 }
