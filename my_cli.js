@@ -44,7 +44,7 @@ if (option === 'start' || option === 's') {
         console.log(stdout)
         
         console.log("###############################")
-        console.log("部署结束！")
+        console.log("更新结束！")
         console.log("###############################")
     })
     // deploy_website()
