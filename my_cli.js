@@ -61,7 +61,7 @@ if (option === 'start' || option === 's') {
         console.log(stdout)
 
         console.log("###############################")
-        console.log("step3: 正在将本地源码的更改同步到远程仓库...")
+        console.log("同步本地博源代码到远程仓库完成！")
         console.log("###############################")
     })
     // finish_work()
