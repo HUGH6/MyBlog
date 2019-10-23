@@ -1,3 +1,5 @@
+// 工具脚本
+// 作者：胡子涵
 
 let option = process.argv[2]
 
