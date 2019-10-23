@@ -1,8 +1,6 @@
 
 let option = process.argv[2]
 
-var exec = require('child_process').exec
-
 
 // 命令行
 const GIT_STATUS = 'git status'
@@ -21,6 +19,8 @@ if (option === 'start' || option === 's') {
     console.log("###############################")
     console.log("step1: 正在从远程仓库同步代码到本地...")
     console.log("###############################")
+	let exec = require('child_process').exec
+	
     exec(GIT_PULL, function(err, stdout) {
         if (err) {
             throw err
@@ -37,6 +37,8 @@ if (option === 'start' || option === 's') {
     console.log("###############################")
     console.log("step2: 正在更新博客内容并将其部署到github pages...")
     console.log("###############################")
+	let exec = require('child_process').exec
+	
     exec(DEPLOY, function(err, stdout) {
         if (err) {
             throw err
@@ -53,6 +55,8 @@ if (option === 'start' || option === 's') {
     console.log("###############################")
     console.log("step3: 正在将本地源码的更改同步到远程仓库...")
     console.log("###############################")
+	let exec = require('child_process').exec
+	
     cli = GIT_ADD_ALL + ' && ' + GIT_COMMIT + ' && ' + GIT_PUSH
     exec(cli, function(err, stdout) {
         if (err) {
