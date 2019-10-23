@@ -32,7 +32,7 @@ if (option === 'start' || option === 's') {
         console.log("###############################")
     })
     // start_work()
-    // 功能2：写完博客后，部署博客
+// 功能2：写完博客后，部署博客
 } else if (option === 'deploy' || option === 'd') {
     console.log("###############################")
     console.log("step2: 正在更新博客内容并将其部署到github pages...")
