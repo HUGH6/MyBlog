@@ -10,7 +10,8 @@ const GIT_ADD_ALL = 'git add *'
 const GIT_COMMIT = 'git commit -m ' + `"update my blog at ${new Date().toLocaleString()}"`
 const GIT_PULL = 'git pull origin master'
 const GIT_PUSH = 'git push -u origin master'
-const DEPLOY = 'hexo clean && hexo g && hexo d'
+const GENERATE = 'hexo clean && hexo g && hexo d'
+const UPDATE = 'hexo g && hexo d'
 
 
 
@@ -35,20 +36,20 @@ if (option === 'start' || option === 's') {
     })
     // start_work()
 // 功能2：写完博客后，部署博客
-} else if (option === 'update' || option === 'u') {
+} else if (option === 'generate' || option === 'g') {
     console.log("###############################")
-    console.log("step2: 正在更新博客内容并将其部署到github pages...")
+    console.log("step2: 正在重新生成博客内容并将其部署到github pages...")
     console.log("###############################")
     let exec = require('child_process').exec
 	
-    exec(DEPLOY, function(err, stdout) {
+    exec(GENERATE, function(err, stdout) {
         if (err) {
             throw err
         }
         console.log(stdout)
         
         console.log("###############################")
-        console.log("更新结束！")
+        console.log("部署结束！")
         console.log("###############################")
     })
     // deploy_website()
@@ -71,8 +72,27 @@ if (option === 'start' || option === 's') {
         console.log("###############################")
     })
     // finish_work()
+// 功能4：不执行clean操作，直接执行hexo g && hexo d，提高速度
+} else if (option === 'update' || option === 'u') {
+    console.log("###############################")
+    console.log("step2: 正在更新博客内容并将其部署到github pages...")
+    console.log("###############################")
+    let exec = require('child_process').exec
+	
+    exec(UPDATE, function(err, stdout) {
+        if (err) {
+            throw err
+        }
+        console.log(stdout)
+        
+        console.log("###############################")
+        console.log("更新结束！")
+        console.log("###############################")
+    })
+    // finish_work()
 // 操作失败，退出
-} else {
+}
+ else {
     console.log("###############################")
     console.log("ERR: 参数错误")
     console.log("###############################")
