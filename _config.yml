@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://hugh6.github.io
 root: /
 # permalink: :year/:month/:day/:title/
 permalink: :year/:id/
@@ -118,9 +118,12 @@ jsonContent:
 #不需要使用，直接设置值为false，或注释掉
 word_count: True
 
+Plugins:
+- hexo-generator-sitemap
+- hexo-generator-baidu-sitemap
+
 # 动生成sitemap
 sitemap:
     path: sitemap.xml
-
 baidusitemap:
     path: baidusitemap.xml
