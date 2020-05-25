@@ -1,6 +1,7 @@
 ---
 title: vue.js自定义指令介绍与使用
 date: 2019-10-24 21:35:25
+id: 201911010101
 tags:
 	vue
 categories:

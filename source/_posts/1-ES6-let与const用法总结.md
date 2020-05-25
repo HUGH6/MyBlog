@@ -1,6 +1,7 @@
 ---
 title: '[1] ES6 let与const用法总结'
 date: 2019-10-23 23:29:28
+id: 201910010101
 tags:
 	ES6
 categories:
