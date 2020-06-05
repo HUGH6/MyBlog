@@ -83,10 +83,9 @@ donates:
 #         type: alipay
 #         # Qrcode image URL
 #         qrcode: ''
-#     -
-#         # Donation entry name
-    type: wechat
-    qrcode: /images/wechatqrcode.png
+    -
+        type: wechat
+        qrcode: /images/wechatqrcode.png
 #     -
 #         # Donation entry name
 #         type: paypal
