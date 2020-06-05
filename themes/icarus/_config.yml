@@ -77,7 +77,7 @@ comment:
 
 # Donation entries 打赏功能
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
-donate:
+donates:
 #     -
 #         # Donation entry name
 #         type: alipay
@@ -86,7 +86,6 @@ donate:
 #     -
 #         # Donation entry name
     type: wechat
-#         # Qrcode image URL
     qrcode: /images/wechatqrcode.png
 #     -
 #         # Donation entry name
