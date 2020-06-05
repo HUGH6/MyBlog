@@ -77,7 +77,7 @@ comment:
 
 # Donation entries 打赏功能
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
-donates:
+donate:
 #     -
 #         # Donation entry name
 #         type: alipay
