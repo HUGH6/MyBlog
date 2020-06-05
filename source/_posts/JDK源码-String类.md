@@ -70,7 +70,7 @@ public String(char value[]) {
 }
 ```
 
-**String(StringBuffer buffer) **
+**String(StringBuffer buffer)**
 
 这个类型的实例实际上表示的是可变字符串，内部存储也是通过字节数组来存储字符串信息，所以是直接讲传入的可变字符串内部的字符数组复制后，赋值给给value。
 
