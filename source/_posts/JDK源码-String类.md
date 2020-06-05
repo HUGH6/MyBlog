@@ -49,7 +49,7 @@ public String() {
 }
 ```
 
-**string(String original) **
+**string(String original)**
 
 直接给成员变量赋值完成。
 
