@@ -24,9 +24,9 @@ Obejct类是所有其他类的父类，所有的对象，包括数组对象，�
 
 <!-- more -->
 
-## 一、源码分析
+## 源码分析
 
-### 1.1 getClass()
+### getClass()
 
 native方法，final修饰，子类不可重写。
 
@@ -41,7 +41,7 @@ Number n = 0;
 Class<? extends Number> c = n.getClass(); 	// class java.lang.Integer
 ```
 
-### 1.2 hashCode()
+### hashCode()
 
 native方法，返回对象的哈希码，主要用于HashMap等数据结构。
 
@@ -54,7 +54,7 @@ native方法，返回对象的哈希码，主要用于HashMap等数据结构。
 
 注意：**如果2个对象的equals方法相等，那么他们的hashCode值也必须相等，反之，如果2个对象hashCode值相等，但是equals不相等，这样会影响性能，所以还是建议2个方法都一起重写。**
 
-### 1.3 equals()
+### equals()
 
 比较两个对象是否相等。Object类的默认实现是比较2个对象的内存地址是否相等：
 
@@ -66,7 +66,7 @@ public boolean equals(Object obj) {
 
 注意：**如果重写了equals方法，通常有必要重写hashCode方法，这点已经在hashCode方法中说明了。**
 
-### 1.4 clone()
+### clone()
 
 native方法，创建并返回当前对象的一份拷贝。
 
@@ -74,7 +74,7 @@ native方法，创建并返回当前对象的一份拷贝。
 
 由于Object本身没有实现Cloneable接口，所以不重写clone方法并且进行调用的话会发生CloneNotSupportedException异常。
 
-### 1.5 toString()
+### toString()
 
 Object对象的默认实现，即输出类的名字@实例的哈希码的16进制：
 
@@ -84,7 +84,7 @@ public String toString() {
 }
 ```
 
-### 1.6 notify()
+### notify()
 
 native方法，final修饰，不允许子类重写。
 
@@ -106,13 +106,13 @@ notify方法只能被作为此对象监视器的所有者的线程来调用。�
 
 **因为notify只能在拥有对象监视器的所有者线程中调用，否则会抛出IllegalMonitorStateException异常**
 
-### 1.7 notifyAll()
+### notifyAll()
 
 跟notify一样，唯一的区别就是会唤醒在此对象监视器上等待的所有线程，而不是一个线程。
 
 同样，如果当前线程不是对象监视器的所有者，那么调用notifyAll同样会发生IllegalMonitorStateException异常。
 
-### 1.8 wait(long timeout) throws InterruptedException
+### wait(long timeout) throws InterruptedException
 
 native方法，final修饰，子类不可重写。
 
@@ -129,15 +129,15 @@ wait方法会让当前线程(我们先叫做线程T)将其自身放置在对象�
 
 所以可以理解wait方法相当于放弃了当前线程对对象监视器的所有者(也就是说释放了对象的锁)。之后，线程T会被等待集中被移除，并且重新进行线程调度。然后，该线程以常规方式与其他线程竞争，以获得在该对象上同步的权利；一旦获得对该对象的控制权，该对象上的所有其同步声明都将被恢复到以前的状态，这就是调用wait方法时的情况。然后，线程T从wait方法的调用中返回。所以，从wait方法返回时，该对象和线程T的同步状态与调用wait方法时的情况完全相同。
 
-### 1.9 wait(long timeout, int nanos) throws InterruptedException
+### wait(long timeout, int nanos) throws InterruptedException
 
 同wait(long timeout)方法类似，多了一个nanos参数，这个参数表示额外时间（以毫微秒为单位，范围是 0-999999）。 所以超时的时间还需要加上nanos毫秒。需要注意的是 wait(0, 0)和wait(0)效果是一样的，即一直等待。
 
-### 1.10 wait() throws InterruptedException
+### wait() throws InterruptedException
 
 该方法一直等待，没有超时时间这个概念。
 
-### 1.11 finalize()
+### finalize()
 
 finalize方法是一个protected方法，Object类的默认实现是不进行任何操作。
 
