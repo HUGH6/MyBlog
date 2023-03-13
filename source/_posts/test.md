@@ -1,7 +1,7 @@
 ---
 title: test
-date: 2023-03-13T13:55:43.497Z
-id: 1678715743497101
+date: 2023-03-13T14:01:52.810Z
+id: 1678716112810578
 tags:
 	test
 categories:
@@ -14,9 +14,5 @@ categories:
 项目描述：python语言编写的开源量化交易平台
 
 # 项目文件组织结构
-
-
-![](/imgs/test/Pasted%20image%2020230313171223.png)
-
 
 ![](/imgs/test/a.png)
