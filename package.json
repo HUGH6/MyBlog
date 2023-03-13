@@ -7,7 +7,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "blog": "node my_cli.js"
+    "blog": "node blog_util.js"
   },
   "hexo": {
     "version": "4.2.1"
@@ -27,6 +27,7 @@
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
     "hexo-tag-cloud": "^2.0.11",
-    "hexo-wordcount": "^6.0.1"
+    "hexo-wordcount": "^6.0.1",
+    "shelljs": "^0.8.5"
   }
 }
