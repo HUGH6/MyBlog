@@ -83,7 +83,7 @@ comment:
 #         type: alipay
 #         # Qrcode image URL
 #         qrcode: ''
-    -
+    # -
         # type: wechat
         # qrcode: /images/wechatqrcode.png
 #     -
