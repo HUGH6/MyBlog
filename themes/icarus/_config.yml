@@ -77,15 +77,15 @@ comment:
 
 # Donation entries 打赏功能
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
-donate:
+# donate:
 #     -
 #         # Donation entry name
 #         type: alipay
 #         # Qrcode image URL
 #         qrcode: ''
     -
-        type: wechat
-        qrcode: /images/wechatqrcode.png
+        # type: wechat
+        # qrcode: /images/wechatqrcode.png
 #     -
 #         # Donation entry name
 #         type: paypal
@@ -134,7 +134,7 @@ widgets:
         # Title of the author to be shown in the profile widget
         author_title: HELLO WORLD
         # Author's current location to be shown in the profile widget
-        location: Hefei,China
+        location: HangZhou,China
         # Path or URL to the avatar to be shown in the profile widget
         avatar: /images/avatar.png
         # Email address for the Gravatar to be shown in the profile widget
@@ -148,15 +148,15 @@ widgets:
             Github:
                 icon: fab fa-github
                 url: 'https://github.com/HUGH6'
-            微博:
-                icon: fab fa-weibo
-                url: "https://weibo.com/u/5858483327?is_hot=1"
-            知乎:
-                icon: fab fa-zhihu
-                url: "https://www.zhihu.com/people/yun-luo-xing-chen-h/activities"
-            B站:
-                icon: fab fa-blogger
-                url: "https://space.bilibili.com/207582563"
+            # 微博:
+            #     icon: fab fa-weibo
+            #     url: "https://weibo.com/u/5858483327?is_hot=1"
+            # 知乎:
+            #     icon: fab fa-zhihu
+            #     url: "https://www.zhihu.com/people/yun-luo-xing-chen-h/activities"
+            # B站:
+            #     icon: fab fa-blogger
+            #     url: "https://space.bilibili.com/207582563"
             Email:
                 icon: far fa-envelope
                 url: mailto:hzh1941857127@163.com
