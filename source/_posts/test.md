@@ -1,7 +1,7 @@
 ---
 title: test
-date: 2023-03-13T13:35:34.898Z
-id: 1678714534898570
+date: 2023-03-13T13:37:04.807Z
+id: 1678714624807660
 tags:
 	test
 categories:
@@ -16,7 +16,7 @@ categories:
 # 项目文件组织结构
 
 
-![](/imgs/testPasted%20image%2020230313171223.png)
+![](/imgs/test/Pasted%20image%2020230313171223.png)
 
 
-![](/imgs/testa.png)
+![](/imgs/test/a.png)
