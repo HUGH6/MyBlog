@@ -1,11 +1,11 @@
 ---
-title: test
-date: 2023-03-13T14:09:27.052Z
-id: 1678716567052724
+title: te
+date: 2023-03-13T14:11:54.138Z
+id: 1678716714138811
 tags:
-	test
+	te
 categories:
-	[test]
+	[te]
 
 
 ---
@@ -15,5 +15,4 @@ categories:
 
 # 项目文件组织结构
 
-![](/imgs/test/b.png)
-![](/imgs/test/b.png)
+![](/imgs/te/b.png)
